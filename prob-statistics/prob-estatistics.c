@@ -1,4 +1,4 @@
-//programa criado para auxiliar no curso de Probabilidade e Estatísca oferecido no Instituto Federal de Brasília - campus Taguatinga
+//programa criado para auxiliar no curso de Probabilidade e Estatísca que curso no Instituto Federal de Brasília - campus Taguatinga
 //Por enquanto ainda é um "trabalho em progresso
 
 #include <stdio.h>
