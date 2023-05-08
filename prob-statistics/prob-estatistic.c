@@ -20,8 +20,14 @@ int main(void){
 		
 		int op, q;
 		float m;
-		printf("Insira um valor correspondete a operação desejada:\n\tCalcular Média Aritmédica Simples(0)\n\tCalcular Moda(1)\n\tCalcular desvio padrão(2)\n\tCalcular Desvio Médio(3)\n\tCalcular Variância(4)\n\t...\n");
-		scanf("%d", &op);
+		printf("Insira um valor correspondete a operação desejada:\n");
+			printf("\tCalcular Média Aritmédica Simples (0)\n");
+			printf("\tCalcular Moda (1)\n");
+			printf("\tCalcular desvio padrão (2)\n");
+			printf("\tCalcular Desvio Médio (3)\n");
+			printf("\tCalcular Variância (4)\n");
+			printf("\tLinear Correlation Coefficient(5)\n");
+			scanf("%d", &op);
 		
 		if(op == 0){	
 			printf("Insira a quantidade de valores: ");
