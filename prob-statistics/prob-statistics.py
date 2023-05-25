@@ -14,22 +14,20 @@ op = input("""Insert a value related to the desired operation:
 	Std Deviation (3);
 	Variance (4);
 	Linear Correlation Coefficient (5);\n""")
+#-------------------------------------------------------------------
 
 #calculating mean
 if op == 0:
 	mean = 0
 	
 	n = input("How many values?:  ")
-	
 	print("Insert each value followed by \"newline\"")
 	
 	for i in range(n):
 		mean += input()
 	
 	mean/=n
-	
 	print("\nThe mean is %s" %mean)
-	
 	quit()
 #------------------------------------------------------------------
 
@@ -44,12 +42,12 @@ if op == 1:
 	for i in range(n):
 		lst[i] = input()
 		
-	sort(lst)
-		
+	sort(lst)	
 	print(lst)
-	
 	quit()
+#------------------------------------------------------------------
 
+#calculating median
 if op == 2:
 	quit()
 	
