@@ -1,0 +1,37 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PRINTFIB.
+       AUTHOR. NATA.
+
+       ENVIRONMENT DIVISION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+        01 TEMP        PIC 999 VALUE 0.
+        01 NUM         PIC 999 VALUE 0.
+        01 FIB-NUM1    PIC 999 VALUE 1.
+        01 FIB-NUM2    PIC 999 VALUE 1.
+       PROCEDURE DIVISION.
+       MAIN-LOGIC.
+           DISPLAY "PLEASE INSERT A NATURAL NUMBER"
+           ACCEPT NUM
+           DISPLAY SPACE
+           DISPLAY 001
+
+           PERFORM FIBONACCI-CALC UNTIL FIB-NUM1 >= NUM
+
+           IF NUM = FIB-NUM1 THEN
+               DISPLAY FIB-NUM1
+               DISPLAY "THAT NUMBER IS IN THE FIBONACCI SEQUENCE, " 
+      -                 "WHICH IS LISTED ABOVE UP TO IT"
+           ELSE
+               DISPLAY "THAT NUMBER IS NOT PART OF THE FIBONACCI "
+                       "SEQUENCE, WHICH IS LISTED ABOVE UP UNTIL IT"
+           END-IF
+           
+           STOP RUN.
+
+       FIBONACCI-CALC.
+           DISPLAY FIB-NUM1
+           MOVE FIB-NUM1 TO TEMP
+           ADD FIB-NUM2 TO FIB-NUM1
+           MOVE TEMP TO FIB-NUM2.
