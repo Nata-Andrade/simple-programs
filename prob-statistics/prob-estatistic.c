@@ -21,12 +21,12 @@ int main(void){
 		int op, q;
 		float m;
 		printf("Insira um valor correspondete a operação desejada:\n");
-			printf("\tCalcular Média Aritmédica Simples (0)\n");
-			printf("\tCalcular Moda (1)\n");
-			printf("\tCalcular desvio padrão (2)\n");
-			printf("\tCalcular Desvio Médio (3)\n");
-			printf("\tCalcular Variância (4)\n");
-			printf("\tLinear Correlation Coefficient(5)\n");
+			printf("\t\e[30;107;1mCalcular Média Aritmédica Simples (0)\n");
+			printf("\t\e[38;5;135;48;5;228;1mCalcular Moda (1)\n");
+			printf("\t\e[38;5;201;48;5;157;1mCalcular desvio padrão (2)\n");
+			printf("\t\e[38;5;196;48;5;117;1mCalcular Desvio Médio (3)\n");
+			printf("\t\e[38;5;202;48;5;111;1mCalcular Variância (4)\n");
+			printf("\t\e[93;48;5;134;1mLinear Correlation Coefficient(5)\e[0m\n");
 			scanf("%d", &op);
 		
 		if(op == 0){	
